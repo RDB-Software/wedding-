@@ -954,9 +954,11 @@
   }
 }
 
-      .wedding-text {
-    line-height: 2.5 !important;
-    white-space: pre-line;
+     
+.wedding-text {
+  line-height: 2.2 !important;
+  white-space: normal;
+
 }
     </style>
   </head>
@@ -1390,6 +1392,21 @@ Con los fondos de renovación y los avances románticos agotados, regresé al Re
       });
       updateActiveSection();
     })();
+
+    const el = document.querySelector('.wedding-text');
+
+function renderText(lang = "en") {
+  const text = el.dataset[lang];
+
+  el.innerHTML = text
+    .split('. ')
+    .join('.<br><br>');
+}
+
+// default load English
+renderText("en");
+
+    
   </script>
   </body>
   </html>
