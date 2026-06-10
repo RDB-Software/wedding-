@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    background: #E8DDD1;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #F4EFE8;
+    border-radius: 24px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    border: 1px solid rgba(166, 106, 84, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Neon Yellow Accent Line */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #E8D625, #A66A54, #324133, #E8D625);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+}
+
+/* Language Toggle */
+.language-toggle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid #A66A54;
+    color: #A66A54;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.lang-btn.active {
+    background: #E8D625;
+    border-color: #E8D625;
+    color: #1F1D35;
+}
+
+.lang-btn:hover {
+    background: #E8D625;
+    border-color: #E8D625;
+    color: #1F1D35;
+}
+
+/* Wedding Header */
+.wedding-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wedding-header h1 {
+    color: #324133;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.wedding-header h1 span {
+    color: #E8D625;
+}
+
+.wedding-header p {
+    color: #A66A54;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.step-indicator {
+    display: inline-block;
+    background: #E8DDD1;
+    color: #A66A54;
+    padding: 5px 14px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    margin-bottom: 24px;
+}
+
+h2 {
+    color: #324133;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid #E8DDD1;
+    border-radius: 12px;
+    font-size: 16px;
+    background: white;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #E8D625;
+    box-shadow: 0 0 0 3px rgba(232, 214, 37, 0.2);
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.next-btn, .submit-btn {
+    width: 100%;
+    background: #324133;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.next-btn:hover, .submit-btn:hover {
+    background: #E8D625;
+    color: #1F1D35;
+    transform: translateY(-2px);
+}
+
+.next-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.attendance-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.yes-btn, .no-btn {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+}
+
+.yes-btn {
+    background: #324133;
+    color: white;
+}
+
+.yes-btn:hover {
+    background: #E8D625;
+    color: #1F1D35;
+}
+
+.no-btn {
+    background: #E8DDD1;
+    color: #1F1D35;
+    border: 1px solid #A66A54;
+}
+
+.no-btn:hover {
+    background: #A66A54;
+    color: white;
+}
+
+.accommodation-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.accommodation-yes, .accommodation-no, .accommodation-maybe {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #A66A54;
+    border-radius: 40px;
+    background: transparent;
+    color: #1F1D35;
+    cursor: pointer;
+}
+
+.accommodation-yes:hover, .accommodation-no:hover, .accommodation-maybe:hover {
+    background: #E8D625;
+    color: #1F1D35;
+}
+
+.guest-count {
+    background: #E8DDD1;
+    padding: 12px;
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #324133;
+}
+
+.guest-form {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #E8DDD1;
+}
+
+.add-guest-btn {
+    width: 100%;
+    background: transparent;
+    border: 2px dashed #E8D625;
+    color: #A66A54;
+    padding: 12px;
+    border-radius: 40px;
+    margin-top: 15px;
+}
+
+.add-guest-btn:hover {
+    background: #E8D625;
+    color: #1F1D35;
+}
+
+.song-hint {
+    color: #A66A54;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Thank You Page */
+.thankyou-title {
+    color: #324133;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.thankyou-message-line {
+    text-align: center;
+    color: #1F1D35;
+    margin-bottom: 10px;
+}
+
+.thankyou-celebrate-line {
+    text-align: center;
+    color: #E8D625;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.wedding-date-line {
+    text-align: center;
+    color: #A66A54;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #E8DDD1;
+}
+
+/* Sorry Page */
+.sorry-message-line {
+    text-align: center;
+    color: #A66A54;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.sorry-message-small-line {
+    text-align: center;
+    color: #1F1D35;
+    font-style: italic;
+}
+
+/* Mobile Responsive */
+@media (max-width: 550px) {
+    .card {
+        padding: 24px 20px;
+    }
+    
+    .wedding-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .accommodation-buttons {
+        flex-direction: column;
+    }
+}
