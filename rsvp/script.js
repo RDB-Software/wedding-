@@ -386,13 +386,16 @@ function renderStep5(container) {
                 </div>
                 <div class="step-indicator">${t('step')} 5 ${t('of')} 6</div>
                 <h2>${t('children')}</h2>
+                
                 ${state.formData.children.length > 0 ? `
                     <div style="background: #E8DDD1; padding: 12px; border-radius: 12px; margin-bottom: 15px;">
                         <strong>✅ Added Children:</strong>
                         ${childrenHtml}
                     </div>
                 ` : ''}
+                
                 <div class="guest-count">👧 ${state.formData.children.length}/3 children added</div>
+                
                 ${state.formData.children.length < 3 ? `
                     <div class="guest-form">
                         <input type="text" id="childName" placeholder="${t('childName')}" value="${escapeHtml(state.childName)}">
@@ -402,10 +405,16 @@ function renderStep5(container) {
                             <option value="Standard" ${state.childMeal === 'Standard' ? 'selected' : ''}>${t('standard')}</option>
                             <option value="Vegetarian" ${state.childMeal === 'Vegetarian' ? 'selected' : ''}>${t('vegetarian')}</option>
                         </select>
-                        <button class="add-guest-btn" id="addChildBtn">${t('addChild')}</button>
+                        <button class="add-guest-btn" id="addChildBtn" style="margin-top: 15px;">${t('addChild')}</button>
+                        <p style="text-align: center; margin-top: 10px; font-size: 1.1rem; color: maroon; font-style: italic;">
+                            📝 Click here to add child before pressing Next
+                        </p>
                     </div>
                 ` : ''}
-                <button class="next-btn" id="nextBtn">${t('next')}</button>
+                
+                <button class="next-btn" id="nextBtn">
+                    ${t('next')} ${state.formData.children.length > 0 ? `(${state.formData.children.length} children)` : '(No children)'}
+                </button>
             </div>
         </div>
     `;
@@ -429,11 +438,11 @@ function renderStep5(container) {
         }
     });
     document.getElementById('nextBtn')?.addEventListener('click', () => {
+        // ✅ No validation - child nahi hai toh bhi next ho jayega
         state.step = 6;
         updateUI();
     });
 }
-
 function renderStep6(container) {
     container.innerHTML = `
         <div class="container">
