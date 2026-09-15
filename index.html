@@ -776,6 +776,8 @@
         font-family: 'Cormorant Garamond', serif;
       }
       .travel-card p, .travel-card li { color: #4a3e30; }
+      .travel-card ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+      .travel-card ul li { margin-bottom: 6px; }
 
       /* FAQ Accordion - Updated with all questions */
       .faq-section {
@@ -1213,20 +1215,30 @@ Con los fondos de renovación y los avances románticos agotados, regresé al Re
   </div>
 </section>
 
-    <!-- Wedding Day Detailed -->
+<!-- Wedding Day Detailed -->
     <section id="wedding-day" class="wedding-day-schedule">
       <div class="wedding-schedule-card">
         <div class="schedule-header">
           <h3 data-en="WEDDING DAY SCHEDULE" data-es="HORARIO DEL DÍA DE BODA">WEDDING DAY SCHEDULE</h3>
           <div class="seal"></div>
         </div>
-        <div class="schedule-item"><span class="schedule-time">2:30 PM</span><span class="schedule-event" data-en="Wedding party convenes at the venue" data-es="El cortejo nupcial se reúne en el lugar">Wedding party convenes at the venue</span></div>
+        <div class="schedule-item"><span class="schedule-time">2:30 PM</span><span class="schedule-event" data-en="Wedding party convenes at the venue*" data-es="El cortejo nupcial se reúne en el lugar*">Wedding party convenes at the venue*</span></div>
         <div class="schedule-item"><span class="schedule-time">3:00 PM</span><span class="schedule-event" data-en="Guests arrive" data-es="Llegada de invitados">Guests arrive</span></div>
         <div class="schedule-item"><span class="schedule-time">4:00 PM</span><span class="schedule-event" data-en="Ceremony begins" data-es="Comienza la ceremonia">Ceremony begins</span></div>
         <div class="schedule-item"><span class="schedule-time">Afterwards</span><span class="schedule-event" data-en="Drinks, dinner, speeches, cake and live music" data-es="Bebidas, cena, discursos, tarta y música en vivo">Drinks, dinner, speeches, cake and live music</span></div>
         <div class="schedule-item"><span class="schedule-time">Until 12:00 AM</span><span class="schedule-event" data-en="Free bar" data-es="Barra libre">Free bar</span></div>
         <div class="schedule-item"><span class="schedule-time">12:00 AM – 3:00 AM</span><span class="schedule-event" data-en="Paid bar service continues" data-es="Continúa el servicio de barra de pago">Paid bar service continues</span></div>
         <div class="schedule-item"><span class="schedule-time">3:00 AM</span><span class="schedule-event" data-en="Party ends" data-es="Termina la fiesta">Party ends</span></div>
+
+        <!-- NEW NOTE FOR WEDDING PARTY -->
+        <div style="margin-top:1.5rem; padding:1.2rem 1.5rem; background:#fef3e2; border-left:4px solid var(--gold); border-radius:12px;">
+          <p style="margin:0; font-size:0.92rem; color:#5a4a38; line-height:1.7;"
+             data-en="*Wedding party: make sure to arrive with sufficient time beforehand for checking in and getting ready."
+             data-es="*Cortejo nupcial: asegúrese de llegar con suficiente tiempo de antelación para registrarse y prepararse.">
+            *Wedding party: make sure to arrive with sufficient time beforehand for checking in and getting ready.
+          </p>
+        </div>
+
         <div class="venue-info">
           <h3 style="text-align:center; margin-bottom:1rem;" data-en="Venue Information" data-es="Información del Lugar">Venue Information</h3>
           <div class="info-grid">
@@ -1247,7 +1259,6 @@ Con los fondos de renovación y los avances románticos agotados, regresé al Re
         </div>
       </div>
     </section>
-
     <!-- Wedding Strip -->
     <section class="wedding-strip">
       <div class="label" data-en="THE WEDDING" data-es="LA BODA">THE WEDDING</div>
@@ -1256,34 +1267,192 @@ Con los fondos de renovación y los avances románticos agotados, regresé al Re
       <div class="place">Hotel Sant Pere del Bosc, Lloret de Mar</div>
     </section>
 
-   <!-- Accommodation -->
+   <!-- Accommodation - Updated -->
 <section id="accommodation" class="accommodation-section">
   <h2 class="section-title" data-en="Where to Stay" data-es="Dónde Alojarse">Where to Stay</h2>
-<p 
-  style="text-align:center; max-width:700px; margin:0 auto 2rem; color:#5a4a38;" 
-  data-en="Lloret de Mar has a huge range of places to stay, too many for us to list here. Family and a few others will be with us in the venue hotel - we'll be sending more info." 
-  data-es="Lloret de Mar tiene una gran variedad de lugares para alojarse, demasiados para enumerarlos aquí. La familia y algunos otros se alojarán con nosotros en el hotel del evento - enviaremos más información.">
-  Lloret de Mar has a huge range of places to stay, too many for us to list here. Family and a few others will be with us in the venue hotel - we'll be sending more info.
-</p>
-  <div class="card-grid">
 
-    <!-- Hotel 1: Sant Pere del Bosc (Family stays here with private link) -->
+  <div class="card-grid" style="max-width: 950px;">
+
+    <!-- Hotel 1: Sant Pere del Bosc (Wedding party) -->
     <div class="card">
       <div class="card-content">
         <h3 class="card-title">Hotel Sant Pere del Bosc</h3>
-        <p data-en="Family you'll be here with us, we'll provide you with a private booking link." data-es="Familia, estaréis aquí con nosotros, os proporcionaremos un enlace de reserva privado.">Family you'll be here with us, we'll provide you with a private booking link.</p>
-        <p style="margin-top:1rem;"><strong>⭐ 4.8</strong> · <a href="#" style="color:var(--gold); text-decoration:none;">Private link →</a></p>
+        <p style="font-weight:600; color:var(--terracotta); margin-bottom:10px;" 
+           data-en="Wedding party: Saturday night only" 
+           data-es="Cortejo nupcial: solo la noche del sábado">
+          Wedding party: Saturday night only
+        </p>
+        <p data-en="The wedding party will stay here for the Saturday night only. We'll be in touch directly with booking details." 
+           data-es="El cortejo nupcial se alojará aquí solo la noche del sábado. Nos pondremos en contacto directamente con los detalles de la reserva.">
+          The wedding party will stay here for the Saturday night only. We'll be in touch directly with booking details.
+        </p>
+        <p style="margin-top:1rem;"><strong>⭐ 4.8</strong></p>
       </div>
     </div>
-  </div>
-</section>
 
-    <!-- Travel -->
+    <!-- Hotel 2: Hotel Horitzó (Recommended for other guests) -->
+    <div class="card">
+      <div class="card-content">
+        <h3 class="card-title">Hotel Horitzó</h3>
+        <p style="font-weight:600; color:var(--terracotta); margin-bottom:10px;" 
+           data-en="Recommended for other guests and all other dates" 
+           data-es="Recomendado para otros invitados y todas las demás fechas">
+          Recommended for other guests and all other dates
+        </p>
+        <p data-en="Self-catering hotel in Blanes. A discount code is available — get in touch with us for the code." 
+           data-es="Hotel de apartamentos en Blanes. Hay un código de descuento disponible — contacta con nosotros para el código.">
+          Self-catering hotel in Blanes. A discount code is available — get in touch with us for the code.
+        </p>
+        <p style="margin-top:1rem;"><strong>⭐ 4.4</strong> · <a href="https://www.pierreetvacances.com/gb-en/fp_EBH_self-catering-hotel-hotel-horitzo" target="_blank" rel="noopener noreferrer" style="color:var(--gold); text-decoration:none;">Book →</a></p>
+      </div>
+    </div>
+
+    <!-- Hotel 3: Casa Indiana (Boutique option) -->
+    <div class="card">
+      <div class="card-content">
+        <h3 class="card-title">Casa Indiana</h3>
+        <p style="font-weight:600; color:var(--terracotta); margin-bottom:10px;" 
+           data-en="A more upmarket boutique option" 
+           data-es="Una opción boutique más exclusiva">
+          A more upmarket boutique option
+        </p>
+        <p data-en="Boutique hotel in Blanes for those looking for something a little more special." 
+           data-es="Hotel boutique en Blanes para quienes buscan algo un poco más especial.">
+          Boutique hotel in Blanes for those looking for something a little more special.
+        </p>
+        <p style="margin-top:1rem;"><a href="https://www.casaindianahb.com/" target="_blank" rel="noopener noreferrer" style="color:var(--gold); text-decoration:none;">Book →</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="text-align:center; max-width:700px; margin:2rem auto 0; color:#5a4a38; font-size:0.92rem;" 
+     data-en="There are also many other hotels and Airbnbs in the town, but try to be close to the old town and not in the 'tourist ghetto' to the South." 
+     data-es="También hay muchos otros hoteles y Airbnbs en la ciudad, pero intenta estar cerca del casco antiguo y no en el 'gueto turístico' del sur.">
+    There are also many other hotels and Airbnbs in the town, but try to be close to the old town and not in the 'tourist ghetto' to the South.
+  </p>
+</section>
+    <!-- Travel - Updated with full Getting to Blanes info -->
     <section id="travel" class="travel-section">
-      <h2 class="section-title" data-en="Getting to Lloret de Mar" data-es="Cómo Llegar a Lloret de Mar">Getting to Lloret de Mar</h2>
-      <div class="travel-card"><h3>✈️ <span data-en="By Air" data-es="En Avión">By Air</span></h3><p><strong data-en="Nearest Airport:" data-es="Aeropuerto más cercano:">Nearest Airport:</strong> Girona (GRO) - 30km / 30 min</p><p><strong data-en="Alternative:" data-es="Alternativa:">Alternative:</strong> Barcelona-El Prat (BCN) - 75km / 1 hour</p></div>
-      <div class="travel-card"><h3>🚗 <span data-en="Do I need a car?" data-es="¿Necesito un coche?">Do I need a car?</span></h3><p data-en="Not necessarily. Lloret is easy to get around on foot and taxis are readily available." data-es="No necesariamente. Lloret es fácil de recorrer a pie y hay taxis disponibles.">Not necessarily. Lloret is easy to get around on foot and taxis are readily available.</p></div>
-      <div class="travel-card"><h3>🚌 <span data-en="Public Transport" data-es="Transporte Público">Public Transport</span></h3><p data-en="From both airports you can arrive in Lloret by public transport (bus services available)." data-es="Desde ambos aeropuertos se puede llegar a Lloret en transporte público (servicios de autobús disponibles).">From both airports you can arrive in Lloret by public transport (bus services available).</p></div>
+      <h2 class="section-title" data-en="Getting to Blanes" data-es="Cómo Llegar a Blanes">Getting to Blanes</h2>
+      
+      <div class="travel-card">
+        <h3>✈️ <span data-en="By Air" data-es="En Avión">By Air</span></h3>
+        <p><strong data-en="Nearest Airport:" data-es="Aeropuerto más cercano:">Nearest Airport:</strong> Girona (GRO) - 30km / 30 min</p>
+        <p><strong data-en="Alternative:" data-es="Alternativa:">Alternative:</strong> Barcelona-El Prat (BCN) - 75km / 1 hour</p>
+      </div>
+
+      <div class="travel-card">
+        <h3>🚆 <span data-en="By Train from Barcelona" data-es="En Tren desde Barcelona">By Train from Barcelona</span></h3>
+        <p data-en="Blanes is served by the R1 Rodalies coastal railway line. Useful central Barcelona stations include:" data-es="Blanes cuenta con la línea de tren costera R1 de Rodalies. Las estaciones útiles del centro de Barcelona incluyen:">Blanes is served by the R1 Rodalies coastal railway line. Useful central Barcelona stations include:</p>
+        <ul>
+          <li>Barcelona Sants</li>
+          <li>Plaça Catalunya</li>
+          <li>Arc de Triomf</li>
+          <li>El Clot-Aragó</li>
+        </ul>
+        <p data-en="Direct R1 services to Blanes run approximately every 30 minutes on weekdays, with additional R1 services continuing towards Maçanet-Massanes roughly hourly. The journey follows the coast for much of the way." data-es="Los servicios directos R1 a Blanes salen aproximadamente cada 30 minutos en días laborables, con servicios R1 adicionales que continúan hacia Maçanet-Massanes aproximadamente cada hora. El viaje sigue la costa en gran parte del recorrido.">Direct R1 services to Blanes run approximately every 30 minutes on weekdays, with additional R1 services continuing towards Maçanet-Massanes roughly hourly. The journey follows the coast for much of the way.</p>
+        <p data-en="Blanes railway station is not in the town centre. Local buses connect the station with central Blanes, but frequencies vary, particularly later in the day. If a bus is not imminent, a taxi is usually the easier option." data-es="La estación de tren de Blanes no está en el centro de la ciudad. Los autobuses locales conectan la estación con el centro de Blanes, pero las frecuencias varían, especialmente más tarde. Si no hay un autobús inminente, un taxi suele ser la opción más fácil.">Blanes railway station is not in the town centre. Local buses connect the station with central Blanes, but frequencies vary, particularly later in the day. If a bus is not imminent, a taxi is usually the easier option.</p>
+      </div>
+
+      <div class="travel-card">
+        <h3>🚌 <span data-en="From Barcelona Airport" data-es="Desde el Aeropuerto de Barcelona">From Barcelona Airport</span></h3>
+        <p data-en="The Sagalés 603 airport coach connects Barcelona El Prat Airport with Blanes, serving both Terminal 1 and Terminal 2 and terminating at Blanes bus station. This is generally simpler than taking an airport train into Barcelona and then changing onto the R1 if your destination is directly Blanes." data-es="El autobús aeropuerto Sagalés 603 conecta el Aeropuerto de Barcelona El Prat con Blanes, sirviendo tanto la Terminal 1 como la Terminal 2 y terminando en la estación de autobuses de Blanes. Esto es generalmente más sencillo que tomar un tren desde el aeropuerto a Barcelona y luego cambiar al R1 si su destino es directamente Blanes.">The Sagalés 603 airport coach connects Barcelona El Prat Airport with Blanes, serving both Terminal 1 and Terminal 2 and terminating at Blanes bus station. This is generally simpler than taking an airport train into Barcelona and then changing onto the R1 if your destination is directly Blanes.</p>
+        <p data-en="Services are seasonal and subject to timetable changes, so check the current timetable shortly before travelling." data-es="Los servicios son estacionales y están sujetos a cambios de horario, así que consulte el horario actual poco antes de viajar.">Services are seasonal and subject to timetable changes, so check the current timetable shortly before travelling.</p>
+      </div>
+
+      <div class="travel-card">
+        <h3>🚌 <span data-en="From Girona Airport" data-es="Desde el Aeropuerto de Girona">From Girona Airport</span></h3>
+        <p data-en="Sagalés 605 is the Blanes–Girona Airport route among its airport services. Other Girona Airport services connect through Girona and Lloret. Again, check the live timetable shortly before travelling, as Costa Brava airport services vary considerably by season." data-es="Sagalés 605 es la ruta Blanes–Aeropuerto de Girona entre sus servicios de aeropuerto. Otros servicios del Aeropuerto de Girona conectan a través de Girona y Lloret. De nuevo, consulte el horario en vivo poco antes de viajar, ya que los servicios de aeropuerto de la Costa Brava varían considerablemente según la temporada.">Sagalés 605 is the Blanes–Girona Airport route among its airport services. Other Girona Airport services connect through Girona and Lloret. Again, check the live timetable shortly before travelling, as Costa Brava airport services vary considerably by season.</p>
+      </div>
+
+      <div class="travel-card">
+        <h3>🚕 <span data-en="Getting Around Blanes" data-es="Moverse por Blanes">Getting Around Blanes</span></h3>
+        <p data-en="If you stay around the old town, port or Hotel Horitzó area, most of Blanes is easily walkable. The main exception is the railway station, which lies inland from the centre." data-es="Si te alojas cerca del casco antiguo, el puerto o la zona del Hotel Horitzó, la mayor parte de Blanes es fácilmente accesible a pie. La principal excepción es la estación de tren, que se encuentra tierra adentro desde el centro.">If you stay around the old town, port or Hotel Horitzó area, most of Blanes is easily walkable. The main exception is the railway station, which lies inland from the centre.</p>
+        <p><strong data-en="Official Blanes taxi numbers:" data-es="Números oficiales de taxi de Blanes:">Official Blanes taxi numbers:</strong></p>
+        <ul>
+          <li>Taxis de Blanes: +34 972 355 050</li>
+          <li>Nou Taxi Blanes: +34 972 352 727</li>
+          <li>Taxi Blanes: +34 972 334 455</li>
+        </ul>
+        <p data-en="There are taxi ranks at Plaça Catalunya and Blanes railway station. For wedding-day journeys, we strongly recommend booking your taxi in advance rather than calling one at 2:45pm on Saturday." data-es="Hay paradas de taxi en la Plaça Catalunya y en la estación de tren de Blanes. Para los viajes del día de la boda, recomendamos encarecidamente reservar el taxi con antelación en lugar de llamar a uno a las 14:45 del sábado.">There are taxi ranks at Plaça Catalunya and Blanes railway station. For wedding-day journeys, we strongly recommend booking your taxi in advance rather than calling one at 2:45pm on Saturday.</p>
+      </div>
+
+      <div class="travel-card">
+        <h3>🚗 <span data-en="Driving and Parking" data-es="Conducir y Aparcar">Driving and Parking</span></h3>
+        <p data-en="A car is useful if you want to explore the wider Costa Brava, but it is not essential if you are staying centrally in Blanes. Parking in and around the old town can be limited, particularly around the beachfront." data-es="Un coche es útil si quieres explorar la Costa Brava en general, pero no es esencial si te alojas en el centro de Blanes. El aparcamiento en el casco antiguo y sus alrededores puede ser limitado, especialmente cerca del paseo marítimo.">A car is useful if you want to explore the wider Costa Brava, but it is not essential if you are staying centrally in Blanes. Parking in and around the old town can be limited, particularly around the beachfront.</p>
+        <p><strong data-en="Hotel Horitzó:" data-es="Hotel Horitzó:">Hotel Horitzó:</strong> <span data-en="Hotel Horitzó has a limited indoor car park in a separate nearby building. In October the hotel currently charges €10 per day. Spaces cannot simply be assumed to be available, so contact the hotel if parking is important to you." data-es="El Hotel Horitzó tiene un aparcamiento interior limitado en un edificio cercano separado. En octubre el hotel cobra actualmente 10 € por día. No se puede asumir que haya plazas disponibles, así que contacte con el hotel si el aparcamiento es importante para usted.">Hotel Horitzó has a limited indoor car park in a separate nearby building. In October the hotel currently charges €10 per day. Spaces cannot simply be assumed to be available, so contact the hotel if parking is important to you.</span></p>
+        <p><strong data-en="Central Blanes:" data-es="Centro de Blanes:">Central Blanes:</strong> <span data-en="There is a large Saba underground car park on Passeig de Mar / Plaça Catalunya, convenient for the old town and beachfront. There is also parking around the port and Club Vela." data-es="Hay un gran aparcamiento subterráneo Saba en Passeig de Mar / Plaça Catalunya, conveniente para el casco antiguo y el paseo marítimo. También hay aparcamiento alrededor del puerto y Club Vela.">There is a large Saba underground car park on Passeig de Mar / Plaça Catalunya, convenient for the old town and beachfront. There is also parking around the port and Club Vela.</span></p>
+      </div>
+
+      <div class="travel-card">
+        <h3>🏨 <span data-en="Getting to the Wedding Venue" data-es="Cómo Llegar al Lugar de la Boda">Getting to the Wedding Venue</span></h3>
+        <p data-en="Sant Pere del Bosc is only a short distance from Blanes geographically, but it is not a normal town-centre taxi journey because the hotel sits inland in the hills and the last part of the approach is rural track. Allow extra journey time." data-es="Sant Pere del Bosc está a solo una corta distancia de Blanes geográficamente, pero no es un viaje normal de taxi desde el centro de la ciudad porque el hotel se encuentra tierra adentro en las colinas y la última parte del acceso es camino rural. Permita tiempo extra de viaje.">Sant Pere del Bosc is only a short distance from Blanes geographically, but it is not a normal town-centre taxi journey because the hotel sits inland in the hills and the last part of the approach is rural track. Allow extra journey time.</p>
+        <p><strong data-en="WEDDING-DAY TRANSPORT:" data-es="TRANSPORTE DEL DÍA DE LA BODA:">WEDDING-DAY TRANSPORT:</strong> <span data-en="Sant Pere del Bosc is outside central Blanes and cannot sensibly be reached on foot. Please pre-book transport for both your journey to the venue and your return after the party. Aim to reach the hotel by 3pm at the latest unless you are part of the wedding party (who are arriving earlier to check in and prepare)." data-es="Sant Pere del Bosc está fuera del centro de Blanes y no se puede llegar sensatamente a pie. Por favor, reserve transporte con antelación tanto para su viaje al lugar como para su regreso después de la fiesta. Intente llegar al hotel a las 15h como muy tarde, a menos que forme parte del cortejo nupcial (que llega antes para registrarse y prepararse).">Sant Pere del Bosc is outside central Blanes and cannot sensibly be reached on foot. Please pre-book transport for both your journey to the venue and your return after the party. Aim to reach the hotel by 3pm at the latest unless you are part of the wedding party (who are arriving earlier to check in and prepare).</span></p>
+        <p><strong data-en="Taxi numbers:" data-es="Números de taxi:">Taxi numbers:</strong> +34 972 355 050 · +34 972 352 727 · +34 972 334 455</p>
+      </div>
+    </section>
+
+    <!-- Suggested Activities Section (NEW) -->
+    <section id="activities" class="travel-section" style="background: #d8c9b6;">
+      <h2 class="section-title" data-en="Suggested Activities" data-es="Actividades Sugeridas">Suggested Activities</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto 2rem; color:#5a4a38;" 
+         data-en="Here are some ideas for things to do during your stay on the Costa Brava." 
+         data-es="Aquí hay algunas ideas de cosas que hacer durante su estancia en la Costa Brava.">
+        Here are some ideas for things to do during your stay on the Costa Brava.
+      </p>
+      <div class="travel-card">
+        <h3>🐎 <span data-en="Horse Riding" data-es="Equitación">Horse Riding</span></h3>
+        <p><strong>AK-Vall Horse Center, Santa Susanna.</strong></p>
+        <p data-en="They offer guided riding routes through the countryside around the Montnegre area as well as riding for different experience levels. Their centre is at Camí de la Riera, Santa Susanna. (Akvall)" data-es="Ofrecen rutas guiadas a caballo por el campo alrededor de la zona del Montnegre, así como equitación para diferentes niveles de experiencia. Su centro está en Camí de la Riera, Santa Susanna. (Akvall)">They offer guided riding routes through the countryside around the Montnegre area as well as riding for different experience levels. Their centre is at Camí de la Riera, Santa Susanna. (Akvall)</p>
+      </div>
+      <div class="travel-card">
+        <h3>🏎️ <span data-en="Karting Blanes" data-es="Karting Blanes">Karting Blanes</span></h3>
+        <p data-en="A good option for a group afternoon." data-es="Una buena opción para una tarde en grupo.">A good option for a group afternoon.</p>
+      </div>
+      <div class="travel-card">
+        <h3>🌿 <span data-en="Marimurtra Botanical Garden" data-es="Jardín Botánico Marimurtra">Marimurtra Botanical Garden</span></h3>
+        <p data-en="One of the best things to do in Blanes." data-es="Una de las mejores cosas que hacer en Blanes.">One of the best things to do in Blanes.</p>
+      </div>
+      <div class="travel-card">
+        <h3>🏰 <span data-en="Sant Joan Castle" data-es="Castillo de Sant Joan">Sant Joan Castle</span></h3>
+        <p data-en="The castle sits above Blanes and gives one of the best panoramic views over the town, port and coastline." data-es="El castillo se encuentra sobre Blanes y ofrece una de las mejores vistas panorámicas de la ciudad, el puerto y la costa.">The castle sits above Blanes and gives one of the best panoramic views over the town, port and coastline.</p>
+      </div>
+      <div class="travel-card">
+        <h3>🪨 <span data-en="Sa Palomera — 'Blanes Rock'" data-es="Sa Palomera — 'La Roca de Blanes'">Sa Palomera — "Blanes Rock"</span></h3>
+        <p data-en="The rocky promontory beside the centre of Blanes traditionally marks the start of the Costa Brava." data-es="El promontorio rocoso junto al centro de Blanes marca tradicionalmente el inicio de la Costa Brava.">The rocky promontory beside the centre of Blanes traditionally marks the start of the Costa Brava.</p>
+      </div>
+      <div class="travel-card">
+        <h3>🏖️ <span data-en="Beaches and Coves" data-es="Playas y Calas">Beaches and Coves</span></h3>
+        <p data-en="Blanes has a long main beachfront as well as smaller coves to the north, including Cala Sant Francesc/Cala Bona and Cala Treumal." data-es="Blanes tiene un largo paseo marítimo principal, así como calas más pequeñas al norte, incluyendo Cala Sant Francesc/Cala Bona y Cala Treumal.">Blanes has a long main beachfront as well as smaller coves to the north, including Cala Sant Francesc/Cala Bona and Cala Treumal.</p>
+        <p data-en="Late October is not guaranteed beach weather, but on a warm sunny day it can still be perfectly pleasant." data-es="A finales de octubre no está garantizado el clima de playa, pero en un día cálido y soleado todavía puede ser perfectamente agradable.">Late October is not guaranteed beach weather, but on a warm sunny day it can still be perfectly pleasant.</p>
+      </div>
+      <div class="travel-card">
+        <h3>🏛️ <span data-en="Girona" data-es="Girona">Girona</span></h3>
+        <p data-en="Girona is well worth a full day for its medieval old town, city walls, Jewish Quarter, cathedral, restaurants and bars." data-es="Girona merece un día completo por su casco antiguo medieval, murallas, barrio judío, catedral, restaurantes y bares.">Girona is well worth a full day for its medieval old town, city walls, Jewish Quarter, cathedral, restaurants and bars.</p>
+      </div>
+      <div class="travel-card">
+        <h3>🌊 <span data-en="Explore the Costa Brava" data-es="Explora la Costa Brava">Explore the Costa Brava</span></h3>
+        <p data-en="Tossa de Mar is the obvious first excursion, but there are plenty of smaller coves, coastal walks and villages further north if people have cars." data-es="Tossa de Mar es la primera excursión obvia, pero hay muchas calas más pequeñas, paseos costeros y pueblos más al norte si la gente tiene coche.">Tossa de Mar is the obvious first excursion, but there are plenty of smaller coves, coastal walks and villages further north if people have cars.</p>
+      </div>
+    </section>
+
+    <!-- Weather Section (NEW) -->
+    <section id="weather" class="travel-section" style="background: #e2d5c4;">
+      <h2 class="section-title" data-en="Weather" data-es="Clima">Weather</h2>
+      <div class="travel-card">
+        <p data-en="Late October on the Costa Brava is generally mild, but it is definitely autumn rather than summer." data-es="A finales de octubre en la Costa Brava generalmente es suave, pero definitivamente es otoño en lugar de verano.">Late October on the Costa Brava is generally mild, but it is definitely autumn rather than summer.</p>
+        <p data-en="Blanes averages around 21°C during the day and 16°C overnight in October, with sea temperatures averaging around 21°C. There is the possibility of rain, although we are hoping not!" data-es="Blanes promedia alrededor de 21°C durante el día y 16°C durante la noche en octubre, con temperaturas del mar promediando alrededor de 21°C. ¡Existe la posibilidad de lluvia, aunque esperamos que no!" style="margin-top:1rem;">Blanes averages around 21°C during the day and 16°C overnight in October, with sea temperatures averaging around 21°C. There is the possibility of rain, although we are hoping not!</p>
+        <p data-en="For the wedding weekend, bring normal Mediterranean autumn clothes but also bring:" data-es="Para el fin de semana de la boda, traiga ropa normal de otoño mediterráneo pero también traiga:" style="margin-top:1rem;">For the wedding weekend, bring normal Mediterranean autumn clothes but also bring:</p>
+        <ul>
+          <li data-en="a jacket or warm layer for evenings;" data-es="una chaqueta o capa abrigada para las noches;">a jacket or warm layer for evenings;</li>
+          <li data-en="something rainproof;" data-es="algo a prueba de lluvia;">something rainproof;</li>
+          <li data-en="sensible shoes if walking around the older towns or coast;" data-es="zapatos cómodos si camina por los pueblos antiguos o la costa;">sensible shoes if walking around the older towns or coast;</li>
+          <li data-en="swimwear" data-es="traje de baño">swimwear</li>
+        </ul>
+        <p data-en="Sant Pere del Bosc is away from the beachfront and more exposed, so it may feel noticeably cooler after sunset." data-es="Sant Pere del Bosc está lejos del paseo marítimo y más expuesto, por lo que puede sentirse notablemente más fresco después del atardecer." style="margin-top:1rem;">Sant Pere del Bosc is away from the beachfront and more exposed, so it may feel noticeably cooler after sunset.</p>
+        <p data-en="Clocks go back overnight on Saturday 24 / Sunday 25 October 2026, so Sunday morning officially comes with an extra hour in bed!" data-es="Los relojes se atrasan durante la noche del sábado 24 al domingo 25 de octubre de 2026, ¡así que la mañana del domingo viene oficialmente con una hora extra en la cama!" style="margin-top:1rem; font-weight:600; color:var(--terracotta);">Clocks go back overnight on Saturday 24 / Sunday 25 October 2026, so Sunday morning officially comes with an extra hour in bed!</p>
+      </div>
     </section>
 
     <!-- FAQ - Updated with all questions -->
@@ -1348,7 +1517,7 @@ Con los fondos de renovación y los avances románticos agotados, regresé al Re
       const overlay = document.getElementById('overlay');
       const closeBtn = document.getElementById('closeMenuBtn');
       const backBtn = document.getElementById('backToTop');
-      const sections = ['hero', 'story', 'schedule', 'wedding-day', 'accommodation', 'travel', 'faq'];
+      const sections = ['hero', 'story', 'schedule', 'wedding-day', 'accommodation', 'travel', 'activities', 'weather', 'faq'];
       const navDots = document.querySelectorAll('.nav-dot');
       const navLinks = document.querySelectorAll('.nav a');
 
